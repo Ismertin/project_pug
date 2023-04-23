@@ -1,6 +1,26 @@
-include pug/libs/_libs
-
-include pug/_main
+include _libs
+include _main
 .main_page
+    include pug/header/_header
     .container
-        include pug/_liberty
+        .main_page_title
+            h1 Строительство домов и коттеджей <span>под ключ в Крыму</span>
+            .main_page_vector
+            .main_page_subtitle
+                h3 Выполним все работы точно в срок с гарантией по договору
+            .main_page_button
+                button Рассчитать стоимость
+        .main_page_camera
+            p В обязательном порядке устанавливаем камеры видео наблюдения
+            .main_page_camera_image
+                img.src(src=require(`./images/hiwatch.svg`) alt=camera)
+    .about
+        .about_title
+            h2 С <span>2012 года </span> возвели <span> более 180 объектов</span>
+            p От небольших сооружений до многоэтажных коттеджей с дизайнерским интерьером
+        .about_project
+            .about_project_rec1
+                img.src(src=require('./images/Rectangle1.png') alt=rec1)
+                h2 Барнхаус L
+                p Площадь - 115 м²
+                a(href='#') подробнее

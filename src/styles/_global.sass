@@ -1,22 +1,144 @@
+html
+  font-family: "Montserrat", sans-serif
+
 body
   margin: 0
   padding: 0
   box-sizing: border-box
 
 .main_page
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
   height: 100vh
   background-image: url("./images/back.png")
   background-size: cover
   background-position: center
   background-repeat: no-repeat
+  &_title
+    max-width: 730px
+    float: left
+    margin-top: 10%
+    margin-bottom: 50px
+    color: white
+  &_title h1
+    font-size: 64px
+  &_title span
+    color: $red
+  &_vector
+    border: solid $red
+    width: 100px
+    color: $red
+  &_subtitle
+    width: 400px
+    font-size: 26px
+    font-weight: 300
+    color: $white
+  &_button button
+    width: 300px
+    height: 70px
+    font-size: 20px
+    border-radius: 15px
+    color: $red
+    &:hover
+      background-color: $red
+      color: $white
+      transition: all 0.3s ease-out
+      border: 1px solid $white
+  &_camera
+    display: flex
+    flex-wrap: nowrap
+    flex-direction: column
+    align-items: center
+    float: right
+    margin-top: 25%
+    border-radius: 40px
+    background-color: rgba(15,8,19,0.28)
+    backdrop-filter: blur(14px)
+    width: 320px
+    height: 400px
+    color: $white
+  &_camera p
+    text-align: center
+    font-size: 25px
+    font-weight: 500
+    margin-bottom: 50px
+
+
 
 .container
-  margin: 0 80px 0 20px
+  max-width: 90%
+  margin-right: 5%
+  margin-left: 5%
 
 .header-line
+  margin: 0 20px 0 20px
   display: flex
-  padding-right: 20px
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-items: center
+.header-line_logo
+  display: flex
+  align-items: center
+.header-line_logo_descr strong
+  font-size: 20px
+.header-line_logo_descr
+  font-weight: 300
+  padding-left: 20px
+  font-size: 12px
+  text-align: center
+  color: $white
+  line-height: 12px
 
+.link_menu
+  @include solid_anim
+
+.header-line_call_back
+  align-items: center
+  justify-content: center
+  display: flex
+
+  &_infom strong
+    font-size: 20px
+    font-weight: bold
+  &_infom
+    padding-left: 10px
+    font-size: 14px
+    font-weight: 300
+    text-align: center
+    color: $white
+    line-height: 12px
+
+.about
+  display: flex
+  align-items: center
+  flex-direction: column
+  margin: 80px 0 80px 0
+  text-align: center
+  &_title
+    width: 620px
+    color: $txt
+  & h2
+    font-size: 40px
+    font-weight: 300
+  & span
+    color: $red
+    font-weight: 700
+  & p
+    font-size: 25px
+  &_project
+    display: flex
+    width: 1180px
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 80px 50px 0
+    &_rec1
+      display: block
+      & img
+        position: relative
+        width: 100%
+      & h2
+        position: absolute
 
 
 

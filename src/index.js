@@ -1,2 +1,2 @@
 import '../src/style.sass'
-import '../src/index.pug'
+import './index.pug'
