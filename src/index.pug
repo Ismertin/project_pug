@@ -14,13 +14,39 @@ include _main
             p В обязательном порядке устанавливаем камеры видео наблюдения
             .main_page_camera_image
                 img.src(src=require(`./images/hiwatch.svg`) alt=camera)
-    .about
+.about
+    .container
         .about_title
             h2 С <span>2012 года </span> возвели <span> более 180 объектов</span>
             p От небольших сооружений до многоэтажных коттеджей с дизайнерским интерьером
         .about_project
-            .about_project_rec1
+            .about_project_rec
                 img.src(src=require('./images/Rectangle1.png') alt=rec1)
-                h2 Барнхаус L
-                p Площадь - 115 м²
-                a(href='#') подробнее
+                .about_project_rec_descr
+                    p <strong>Барнхаус L</strong>
+                    p Площадь - 115 м²
+            .about_project_rec
+                img.src(src=require('./images/Rectangle2.png') alt=rec2)
+                .about_project_rec_descr
+                    p <strong>Барнхаус L</strong>
+                    p Площадь - 115 м²
+            .about_project_rec
+                img.src(src=require('./images/Rectangle3.png') alt=rec1)
+                .about_project_rec_descr
+                    p <strong>Барнхаус L</strong>
+                    p Площадь - 115 м
+            .about_project_rec
+                img.src(src=require('./images/Rectangle4.png') alt=rec1)
+                .about_project_rec_descr
+                    p <strong>Барнхаус L</strong>
+                    p Площадь - 115 м²
+
+        .about_project_button
+            button получить консультацию
+.quiz
+    .container
+        .quiz_title
+            h1 Рассчитайте стоимость ремонта <span><strong></strong> за 1 минуту</span></span> пройдя всего 6 шагов
+        .quiz_block
+            .quiz_block_inform
+            .quiz_block_content

@@ -25,3 +25,16 @@
   height: 400px
   background-repeat: no-repeat
   background-size: cover
+
+
+@mixin butn
+  width: 300px
+  height: 70px
+  font-size: 20px
+  border-radius: 15px
+  color: $red
+  &:hover
+    background-color: $red
+    color: $white
+    transition: all 0.3s ease-out
+    border: 1px solid $white

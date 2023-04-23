@@ -1,11 +1,13 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  text-decoration: none
 html
   font-family: "Montserrat", sans-serif
 
 body
-  margin: 0
-  padding: 0
-  box-sizing: border-box
-
+  margin: 0 auto
 .main_page
   display: flex
   flex-direction: column
@@ -26,25 +28,19 @@ body
   &_title span
     color: $red
   &_vector
+    margin-top: 50px
     border: solid $red
     width: 100px
     color: $red
   &_subtitle
+    margin-top: 50px
     width: 400px
     font-size: 26px
     font-weight: 300
     color: $white
   &_button button
-    width: 300px
-    height: 70px
-    font-size: 20px
-    border-radius: 15px
-    color: $red
-    &:hover
-      background-color: $red
-      color: $white
-      transition: all 0.3s ease-out
-      border: 1px solid $white
+    margin-top: 50px
+    @include butn
   &_camera
     display: flex
     flex-wrap: nowrap
@@ -67,9 +63,9 @@ body
 
 
 .container
-  max-width: 90%
-  margin-right: 5%
-  margin-left: 5%
+  width: 1800px
+  padding-right: 80px
+  padding-left: 80px
 
 .header-line
   margin: 0 20px 0 20px
@@ -112,11 +108,13 @@ body
 .about
   display: flex
   align-items: center
-  flex-direction: column
-  margin: 80px 0 80px 0
+  justify-content: center
+  margin: 0 auto
   text-align: center
   &_title
-    width: 620px
+    margin: 0 auto
+    max-width: 680px
+    align-items: center
     color: $txt
   & h2
     font-size: 40px
@@ -128,17 +126,62 @@ body
     font-size: 25px
   &_project
     display: flex
-    width: 1180px
-    justify-content: space-between
+    max-width: 1280px
     flex-wrap: wrap
-    margin: 0 80px 50px 0
-    &_rec1
-      display: block
-      & img
-        position: relative
-        width: 100%
-      & h2
+    margin: 0 auto
+    &_rec
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin: 10px 10px 10px 10px
+      &_descr
         position: absolute
+        color: $red
+        font-size: 20px
+        line-height: 40px
+      &_descr p strong
+          color: $white
+          font-size: 30px
+          font-weight: 400
+    &_button button
+      @include butn
+      align-content: center
+      margin: 80px 0 80px 0
+
+.quiz
+  display: block
+  flex-direction: column
+  text-align: center
+  align-items: center
+.quiz_title
+  margin: 0 auto
+  flex-wrap: nowrap
+  max-width: 660px
+  font-size: 20px
+  font-weight: 300
+  color: $txt
+  & span
+    color: $red
+    font-weight: 700
+.quiz_block
+  margin-top: 80px
+  display: flex
+  justify-content: center
+  &_inform
+    width: 300px
+    height: 600px
+    background-color: $gray
+  &_content
+    width: 900px
+    height: 600px
+    background-color: $red
+
+
+
+
+
+
 
 
 
