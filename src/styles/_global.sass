@@ -106,32 +106,30 @@ body
     line-height: 12px
 
 .about
-  display: flex
-  align-items: center
-  justify-content: center
-  margin: 0 auto
+  display: block
   text-align: center
+
   &_title
-    margin: 0 auto
-    max-width: 680px
+    margin: 80px 0 80px 0
     align-items: center
     color: $txt
   & h2
     font-size: 40px
-    font-weight: 300
+    font-weight: 500
   & span
     color: $red
     font-weight: 700
   & p
     font-size: 25px
+    padding-top: 10px
+    font-weight: 400
   &_project
     display: flex
-    max-width: 1280px
     flex-wrap: wrap
-    margin: 0 auto
+    align-items: center
+    justify-content: center
     &_rec
       display: flex
-      flex-direction: column
       justify-content: center
       align-items: center
       margin: 10px 10px 10px 10px
@@ -147,6 +145,7 @@ body
     &_button button
       @include butn
       align-content: center
+      justify-content: center
       margin: 80px 0 80px 0
 
 .quiz
@@ -172,10 +171,66 @@ body
     width: 300px
     height: 600px
     background-color: $gray
+    &_call , &_calc
+      display: flex
+      height: 150px
+      align-items: center
+      margin: 0 25px 0 25px
+      & p
+        text-align: left
+        font-size: 18px
+        padding-left: 25px
+      & img
+        width: 60px
+        height: 60px
+    &_logo
+      display: flex
+      height: 300px
+      align-items: center
+      justify-content: center
   &_content
-    width: 900px
+    width: 980px
     height: 600px
-    background-color: $red
+    background-color: $gray
+    &_title
+      margin: 25px 0 5px 0
+      line-height: 45px
+      & h1
+        font-size: 54px
+      & p
+        font-size: 30px
+    &_progress
+      display: block
+      margin: 0 auto
+      border-radius: 45px
+      align-items: center
+      justify-content: center
+      width: 750px
+      height: 5px
+      background-color: $white
+      &-fill
+        width: 15%
+        border-radius: 45px
+        height: 5px
+        background-color: $red
+    &_questions
+      display: inline-block
+      align-items: center
+      justify-content: center
+      margin-top: 80px
+      padding-left: 50px
+      & img
+        width: 100%
+      &:hover img
+        border: 2px solid $red
+        cursor: pointer
+        border-radius: 70px
+        transition: solid 0.3s ease-out
+      &_button button
+        @include butn
+        margin-top: 80px
+
+
 
 
 
