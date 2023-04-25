@@ -9,6 +9,25 @@
                     p Рассчитать стоимость
                 .quiz_block_inform_call
                     img(src=require('../../images/call.png') alt=call)
-                    p Свяжитесь с нами
+                    p Задайте нам вопрос
                 .quiz_block_inform_logo
+                    img(src=require('../../images/logo_quiz.png') alt=logoq)
             .quiz_block_content
+                .quiz_block_content_title
+                    h1 Рассчитайте стоимость
+                    p Сколько этажей будет в вашем доме?
+                .quiz_block_content_progress
+                    .quiz_block_content_progress-fill
+                .quiz_block_content_questions
+                    img(src=require('../../images/house_one.png') alt=logoq)
+                    p 1 этаж
+                .quiz_block_content_questions
+                    img(src=require('../../images/house_two.png') alt=logoq)
+                    p 2 этаж + мансадра
+                .quiz_block_content_questions
+                    img(src=require('../../images/house_three.png') alt=logoq)
+                    p 2 этажа
+                //.quiz_block_content_questions_number
+                //    p <stong>1</stong>/<span>6</span>
+                .quiz_block_content_questions_button
+                    button Следующий вопрос
